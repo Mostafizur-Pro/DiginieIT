@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playfair+Display:wght@700&family=Sevillana&family=Single+Day&display=swap");
+* {
+  font-family: "Indie Flower", cursive;
+  font-family: "Playfair Display", serif;
+  font-family: "Sevillana", cursive;
+  font-family: "Single Day", cursive;
+}
