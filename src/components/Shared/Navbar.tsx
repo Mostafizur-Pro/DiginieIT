@@ -39,8 +39,8 @@ const Navbar = () => {
 
     return (
         <header className="backdrop:blur-2xl">
-            <div className="container mx-auto lg:px-6 px-4 relative text-white py-4 ">
-                <div className=" rounded-full pt-4 pb-4 md:px-12">
+            <div className="container mx-auto lg:px-16 px-4 relative text-white py-4 ">
+                <div className=" rounded-full pt-4 pb-4">
                     <div className="flex items-center justify-between">
                         <div className="">
                             <Image
