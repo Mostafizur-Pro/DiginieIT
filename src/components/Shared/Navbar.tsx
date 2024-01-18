@@ -1,129 +1,134 @@
-/* eslint-disable @next/next/no-img-element */
+"use client";
+
+import logo from "../../../public/images/logo2.png";
+import Image from "next/image";
 import Link from "next/link";
-import DropdownMenu from "./DropDown";
+import { TbMenu } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
+import { useState } from "react";
 
 const Navbar = () => {
-  return (
-    <div className="navbar bg-base-100 ">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
-          >
-            <li>
-              {" "}
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="">Service</Link>
-              <ul className="p-2">
-                <li>
-                  <Link href="">Website Development</Link>
-                </li>
-                <li>
-                  <Link href="">Mobile App Development</Link>
-                </li>
-                <li>
-                  <Link href="">Ecommerce-site Development</Link>
-                </li>
-                <li>
-                  <Link href="">UI/UX Design & Dev</Link>
-                </li>
-                <li>
-                  <Link href="">API Integration</Link>
-                </li>
-                <li>
-                  <Link href="">Digital Marketing</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <Link href="/about">About Us</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <Link href="">
-          <img className="w-[250px]" src="/images/logo.jpg" alt="" />
-          
-        </Link>
-      </div>
-      <div className="navbar-center hidden lg:flex ">
-        <ul className="menu menu-horizontal px-1 hidden md:flex gap-x-4 text-xl">
-          <li>
-            {" "}
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-           <DropdownMenu></DropdownMenu>
+    const navLinks = [
+        {
+            route: "Home",
+            path: "/",
+        },
+        {
+            route: "Project",
+            path: "/project",
+        },
+        {
+            route: "Careers",
+            path: "/careers",
+        },
+        {
+            route: "Our Team",
+            path: "/team",
+        },
+        {
+            route: "About Us",
+            path: "/about",
+        },
+        {
+            route: "Contact Us",
+            path: "/contact",
+        },
+    ];
 
-            {/* <details >
-              <summary className="z-[-1]">Services</summary>
-              <ul className="p-2 ">
-                <li>
-                  <Link href="">Website Development</Link>
-                </li>
-                <li>
-                  <Link href="">Mobile App Development</Link>
-                </li>
-                <li>
-                  <Link href="">Ecommerce-site Development</Link>
-                </li>
-                <li>
-                  <Link href="">UI/UX Design & Dev</Link>
-                </li>
-                <li>
-                  <Link href="">API Integration</Link>
-                </li>
-                <li>
-                  <Link href="">Digital Marketing</Link>
-                </li>
-              </ul>
-            </details> */}
-          </li>
-          <li>
-            <Link href="">Projects</Link>
-          </li>
-          <li>
-            <Link href="">Careers</Link>
-          </li>
-          <li>
-            <Link href="">Our Team</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <Link href="/about" className="btn text-xl">
-          Know More
-        </Link>
-      </div>
-    </div>
-  );
+    const [closeMenu, setCloseMenu] = useState(false);
+
+    return (
+        <header className="backdrop:blur-2xl">
+            <div className="container mx-auto lg:px-16 px-4 relative text-white py-4 ">
+                <div className=" rounded-full pt-4 pb-4">
+                    <div className="flex items-center justify-between">
+                        <div className="">
+                            <Image
+                                className="h-8 w-auto lg:mb-0.5  mb-2.5"
+                                src={logo}
+                                alt="heartbeat givers' logo"
+                            ></Image>
+                        </div>
+                        <nav className="lg:block hidden">
+                            <ul className="flex gap-2">
+                                {navLinks.map((link, idx) => (
+                                    <Link
+                                        href={link?.path}
+                                        className="px-3 text-sm font-medium"
+                                        key={idx}
+                                    >
+                                        {link?.route}
+                                    </Link>
+                                ))}
+                            </ul>
+                        </nav>
+                        <div className="lg:block hidden items-center gap-3">
+                            <div className="flex">
+                                <p className="px-3 text-sm font-medium">Dark</p>
+                                <span className="-rotate-45">
+                                    <input
+                                        type="checkbox"
+                                        className="toggle toggle-sm"
+                                    />
+                                </span>
+                            </div>
+                        </div>
+                        {/* mobile menu button  */}
+                        <div className="block lg:hidden">
+                            <button
+                                className=" font-bold text-2xl text-primary rounded-full"
+                                onClick={() => setCloseMenu(!closeMenu)}
+                            >
+                                <TbMenu />
+                            </button>
+                        </div>
+                    </div>
+                    {closeMenu && (
+                        <div className="bg-gray-300 h-screen  absolute top-0 right-0 w-80">
+                            <div className="flex justify-between p-10 items-end">
+                                <div className="">
+                                    <Image
+                                        className="h-8 w-auto mb-2.5"
+                                        src={logo}
+                                        alt="heartbeat givers' logo"
+                                    ></Image>
+                                </div>
+                                <div className="block lg:hidden">
+                                    <button
+                                        onClick={() => setCloseMenu(!closeMenu)}
+                                        className=" font-bold text-2xl text-primary rounded-full pt-3 mb-0"
+                                    >
+                                        <IoClose />
+                                    </button>
+                                </div>
+                            </div>
+                            <nav className="">
+                                <ul className="flex flex-col px-10 gap-y-2">
+                                    {navLinks.map((link, idx) => (
+                                        <Link
+                                            href={link?.path}
+                                            className=" text-sm font-medium"
+                                            key={idx}
+                                        >
+                                            {link?.route}
+                                        </Link>
+                                    ))}
+                                </ul>
+                            </nav>
+                            <div className="ps-8 mt-3">
+                                <Link
+                                    href={"/register"}
+                                    className="py-3 font-medium px-2  text-primary rounded-full"
+                                >
+                                    Register
+                                </Link>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </header>
+    );
 };
 
 export default Navbar;
