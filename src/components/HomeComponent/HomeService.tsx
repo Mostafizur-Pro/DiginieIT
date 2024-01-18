@@ -1,66 +1,105 @@
-/* eslint-disable @next/next/no-img-element */
+import serviceImage from "@/assets/service2.png";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
-type Service = {
-  map(arg0: (service: any) => import("react").JSX.Element): import("react").ReactNode;
-  _id:string;
-  id: string;
-  name: string;
-  details: string;
-  features: string[];
-  technology: string[];
-  tech_details: string;
-  image: string;
-  cover_img: string;
-};
+import { MdArrowOutward } from "react-icons/md";
+
 const HomeService = async () => {
-  const services:Service=await fetch('https://diginie-it-server.vercel.app/services').then(res=>res.json())
+    const services = [
+        {
+            serviceName: "Innovative Custom Web Design",
+            description:
+                "Crafting tailored designs that authentically capture your brand essence and meaningfully engage your audience. Our team of creative professionals ensures your website stands out prominently in the dynamic digital landscape.",
+            features: [
+                "Unique and captivating designs",
+                "Responsive layouts for all devices",
+                "User-centric approach",
+            ],
+        },
+        {
+            serviceName: "Strategic SEO Optimization and Enhancement",
+            description:
+                "Elevate your online visibility and reach your target audience strategically. Our comprehensive SEO optimization strategies ensure that your website ranks higher in search engine results, driving organic traffic and maximizing your online presence.",
+            features: [
+                "Keyword research and optimization",
+                "Content strategy for search engines",
+                "Analytics and performance tracking",
+            ],
+        },
+        {
+            serviceName: "Comprehensive E-Commerce Solutions",
+            description:
+                "Providing powerful and secure e-commerce platforms that elevate your online store into a revenue-generating machine. We create seamless shopping experiences for your customers, ensuring transactions are both smooth and secure.",
+            features: [
+                "Robust online storefronts",
+                "Payment gateway integration",
+                "Inventory management",
+            ],
+        },
+        {
+            serviceName: "End-to-End Website Development Services",
+            description:
+                "Full-stack development services designed to bring your website to life. Our experts utilize cutting-edge technologies to ensure optimal performance, functionality, and scalability. Your digital presence is in capable hands.",
+            features: [
+                "Custom coding and development",
+                "Content Management System (CMS) integration",
+                "Scalable architecture",
+            ],
+        },
+    ];
 
-  return (
-    <div className="bg-gray-100 p-5">
-      <div className="mb-16">
-        <h1 className="text-2xl md:text-4xl font-bold text-center">Services</h1>
-        <h4 className="text-center font-semibold mt-3">
-          We Are Offering All Kinds of IT Solutions Services
-        </h4>
-      </div>
-      {/* service card  */}
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:w-[1200px] mx-auto my-5 ">
-        {services.map((service) => (
-          <div
-            key={service?.id}
-            className="w-[300px] shadow-lg hover:shadow-2xl duration-500 p-5 border mx-2 rounded-xl bg-white hover:bg-blue-50"
-          >
-            <div className="flex justify-center my-5">
-              <img className="h-[150px] w-[150px]" src={service?.image} alt="" />
+    return (
+        <section className="bg-primary my-32">
+            <div className="container mx-auto lg:px-16 px-4 py-32">
+                <div className="grid grid-cols-7">
+                    <div className="col-span-3">
+                        <h2 className="text-6xl uppercase">
+                            We offer best service for our customer.
+                        </h2>
+                        <div className="flex items-center gap-16 text-sm py-16">
+                            <div className="h-0.5 w-36 bg-white"></div>
+                            <p className="">
+                                find effective digital reach or your business,
+                                powered by human behavior, driven byt data.
+                            </p>
+                        </div>
+                    </div>
+                    <div className=""></div>
+                    <div className="col-span-3  ">
+                        <Image src={serviceImage} alt="service image"></Image>
+                    </div>
+                </div>
+                <div className="mt-16">
+                    <div className="grid grid-cols-4 gap-10">
+                        {services.map((service, idx) => (
+                            <div key={idx} className="">
+                                <h5 className="border-b-2 text-lg">
+                                    0{idx + 1}.
+                                </h5>
+                                <div className="pt-6">
+                                    <h3 className="uppercase text-3xl">
+                                        {service.serviceName}
+                                    </h3>
+                                </div>
+                                <div className="pt-4">
+                                    <Link href={"/"}>
+                                        <span
+                                            className="flex
+                                        items-center gap-6"
+                                        >
+                                            <p className="">Details </p>
+                                            <p className="bg-black w-10 h-10 flex items-center justify-center rounded-full">
+                                                <MdArrowOutward className="" />
+                                            </p>
+                                        </span>
+                                    </Link>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-lg text-center">
-                {service?.name}
-              </h4>
-              <p className="mt-5 text-center">{service?.details}</p>
-
-              <div className="flex justify-center">
-                <Link href={`service/${service?._id}`}>
-                  <button className="font-semibold flex  items-center mt-5">
-                    <h4>Read More </h4>
-                    <h4 className="ml-5">
-                      <FaArrowRight />
-                    </h4>
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+        </section>
+    );
 };
 
 export default HomeService;
-
-
-
