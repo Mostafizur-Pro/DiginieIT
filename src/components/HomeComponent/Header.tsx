@@ -1,5 +1,6 @@
 import planningImage01 from "@/assets/plan.jpg";
 import shapeImage from "@/assets/shape.png";
+import shapeImage02 from "@/assets/shape2.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -18,6 +19,13 @@ const Header = () => {
                     <div className="absolute bottom-0 left-0">
                         <Image
                             src={shapeImage}
+                            className="h-32 w-32 "
+                            alt="shape"
+                        ></Image>
+                    </div>
+                    <div className="absolute bottom-0 right-0">
+                        <Image
+                            src={shapeImage02}
                             className="h-32 w-32 "
                             alt="shape"
                         ></Image>
