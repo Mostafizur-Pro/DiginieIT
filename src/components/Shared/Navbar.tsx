@@ -65,11 +65,12 @@ const Navbar = () => {
                         <div className="lg:block hidden items-center gap-3">
                             <div className="flex">
                                 <p className="px-3 text-sm font-medium">Dark</p>
-                                <input
-                                    type="checkbox"
-                                    className="toggle toggle-sm -rotate-45"
-                                    checked
-                                />
+                                <span className="-rotate-45">
+                                    <input
+                                        type="checkbox"
+                                        className="toggle toggle-sm"
+                                    />
+                                </span>
                             </div>
                         </div>
                         {/* mobile menu button  */}
