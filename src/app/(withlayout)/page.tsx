@@ -15,7 +15,7 @@ const Home = () => {
             <Clients></Clients>
             {/* <Indusstry></Indusstry> */}
             <Goal></Goal>
-            <Partner></Partner>
+            {/* <Partner></Partner> */}
         </div>
     );
 };
