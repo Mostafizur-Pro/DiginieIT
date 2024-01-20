@@ -48,7 +48,7 @@ const HomeService = async () => {
     ];
 
     return (
-        <section className="bg-primary my-32">
+        <section className="bg-primary mt-32">
             <div className="container mx-auto lg:px-16 px-4 py-32">
                 <div className="grid grid-cols-7">
                     <div className="col-span-3">

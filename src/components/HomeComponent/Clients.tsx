@@ -1,36 +1,49 @@
-/* eslint-disable @next/next/no-img-element */
-"use clients"
-import Marquee from "react-fast-marquee";
+import company01 from "@/assets/compnay/IITAB-01.png";
+import company02 from "@/assets/compnay/NEDUBD.png";
+import company03 from "@/assets/compnay/business.png";
+import company04 from "@/assets/compnay/company1.png";
+import company05 from "@/assets/compnay/swachhakasar.png";
+import Image from "next/image";
 
 const Clients = () => {
-  return (
-    <div className="lg:w-[1150px] mx-auto">
-      <div className="my-10">
-        <h1 className="text-4xl text-center font-bold">Our Clients</h1>
-        <h1 className="text-center">We are trusted by industry leaders</h1>
-      </div>
-    <Marquee>
-      <div className="flex items-center">
-        <div className=" my-5 mx-3">
-          <img className=" w-[150px]" src="/images/swachhakasar.png" alt="" />
-          
-        </div>
-        <div className=" my-5 mx-3">
-        <img className=" w-[150px]" src="/images/NEDUBD.png" alt="" />
-        </div>
-        <div className=" my-5 mx-3">
-        <img className=" w-[150px]" src="/images/IITAB-01.png" alt="" />
-        </div>
-        <div className=" my-5 mx-3">
-        <img className=" w-[150px]" src="/images/business.png" alt="" />
-        </div>
-        <div className=" my-5 mx-3">
-        <img className=" w-[150px]" src="/images/company1.jpg" alt="" />
-        </div>
-      </div>
-    </Marquee>
-    </div>
-  );
+    return (
+        <section className=" border-b">
+            <div className="container mx-auto lg:px-16 px-4 py-28">
+                <h2 className="text-center mb-4">
+                    We are trusted by industry leaders
+                </h2>
+                <div className="h-0.5 w-10 bg-gray-500 mx-auto mb-6"></div>
+                <div className="flex items-end justify-evenly">
+                    <Image
+                        className="h-12 w-auto"
+                        src={company01}
+                        alt="Company 01"
+                    ></Image>
+                    <Image
+                        className="h-12 w-auto"
+                        src={company02}
+                        alt="Company 01"
+                    ></Image>
+                    <Image
+                        className="h-12 w-auto"
+                        src={company05}
+                        alt="Company 01"
+                    ></Image>
+
+                    <Image
+                        className="h-12 w-auto"
+                        src={company04}
+                        alt="Company 01"
+                    ></Image>
+                    <Image
+                        className="h-12 w-auto"
+                        src={company03}
+                        alt="Company 01"
+                    ></Image>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Clients;
