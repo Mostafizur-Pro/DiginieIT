@@ -1,89 +1,148 @@
+import shape03 from "@/assets/shape/shape03.png";
 import Image from "next/image";
-import IDEATE from "../../../public/images/light.svg";
-import design from "../../../public/images/pen.svg";
-import dev from "../../../public/images/dev.svg";
-import rocket from "../../../public/images/rocket.svg";
 
 const Goal = () => {
-  return (
-    <div className="p-20">
-      <div>
-        <h1 className="text-4xl text-center font-bold">
-          How we reach Your Goal
-        </h1>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:w-[1200px] mx-auto">
-        <div className="w-[300px]  hover:shadow-lg duration-500 p-5 mx-2 rounded-lg">
-          <div className="flex justify-center items-center border bg-blue-500 rounded-full w-[200px] h-[200px] my-5 mx-3">
-            <Image
-              className="rounded-full bg-white h-[150px] w-[150px] p-2"
-              height={50}
-              width={50}
-              src={IDEATE}
-              alt="Card image"
-            ></Image>
-          </div>
-          <div>
-            <h1 className="text-xl text-center">IDEATE</h1>
-            <p className="text-center">
-              <small>Turning your ideas into concepts</small>
-            </p>
-          </div>
-        </div>
-        <div className="w-[300px]  hover:shadow-lg duration-500 p-5 mx-2 rounded-lg">
-          <div className="flex justify-center items-center border bg-teal-300 rounded-full w-[200px] h-[200px] my-5 mx-3">
-            <Image
-              className="rounded-full bg-white h-[150px] w-[150px] p-2"
-              height={50}
-              width={50}
-              src={design}
-              alt="Card image"
-            ></Image>
-          </div>
-          <div>
-            <h1 className="text-xl text-center">Design</h1>
-            <p className="text-center">
-              <small>Sketching out the requirements</small>
-            </p>
-          </div>
-        </div>
-        <div className="w-[300px]  hover:shadow-lg duration-500 p-5 mx-2 rounded-lg">
-          <div className=" flex justify-center items-center border bg-blue-500 rounded-full w-[200px] h-[200px] my-5 mx-3">
-            <Image
-              className="rounded-full bg-white h-[150px] w-[150px] p-2"
-              height={50}
-              width={50}
-              src={dev}
-              alt="Card image"
-            ></Image>
-          </div>
-          <div>
-            <h1 className="text-xl text-center">DEVELOPMENT</h1>
-            <p className="text-center">
-              <small>Converting designs into reality</small>
-            </p>
-          </div>
-        </div>
-        <div className="w-[300px]  hover:shadow-lg duration-500 p-5 mx-2 rounded-lg">
-          <div className=" flex justify-center items-center border bg-teal-300 rounded-full w-[200px] h-[200px] my-5 mx-3">
-            <Image
-              className="rounded-full bg-white h-[150px] w-[150px] p-2"
-              height={50}
-              width={50}
-              src={rocket}
-              alt="Card image"
-            ></Image>
-          </div>
-          <div>
-            <h1 className="text-xl text-center">DEPLOY</h1>
-            <p className="text-center">
-              <small>Launching the service to the market</small>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    return (
+        <section className="overflow-hidden pb-28">
+            <div className="container mx-auto lg:px-16 px-4 pt-28">
+                <div className="grid grid-cols-2">
+                    <div className=""></div>
+                    <div className="">
+                        <div className="">
+                            <h2 className="text-6xl uppercase">
+                                Our customized Work Flow.
+                            </h2>
+                            <div className="flex items-center gap-16 text-sm py-16">
+                                <div className="h-0.5 w-36 bg-white"></div>
+                                <p className="">
+                                    find effective digital reach or your
+                                    business, powered by human behavior, driven
+                                    byt data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="">
+                <div className="rotate-6 -m-16 mb-16">
+                    <div className=" py-6 hover:text-green-300">
+                        <div className="container mx-auto lg:px-16 px-4">
+                            <div className="grid grid-cols-4">
+                                <div className="">
+                                    <p className="">01</p>
+                                    <h2 className="text-5xl uppercase">
+                                        Concept
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-t border-white/40 py-6 hover:text-green-300">
+                        <div className="container mx-auto lg:px-16 px-4">
+                            <div className="grid grid-cols-4">
+                                <div className=""></div>
+                                <div className="">
+                                    <p className="">02</p>
+                                    <h2 className="text-5xl uppercase">
+                                        Design
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-t border-white/40 py-6 hover:text-green-300">
+                        <div className="container mx-auto lg:px-16 px-4">
+                            <div className="grid grid-cols-4">
+                                <div className=""></div>
+                                <div className=""></div>
+                                <div className="">
+                                    <p className="">03</p>
+                                    <h2 className="text-5xl uppercase">
+                                        Development
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="border-t border-white/40 py-6 hover:text-green-300">
+                        <div className="container mx-auto lg:px-16 px-4">
+                            <div className="grid grid-cols-4 ">
+                                <div className=""></div>
+                                <div className=""></div>
+                                <div className=""></div>
+                                <div className="ms-auto">
+                                    <p className="">04</p>
+                                    <h2 className="text-5xl uppercase">
+                                        Result
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mx-auto lg:px-16 px-4">
+                    <div className="">
+                        <div className="flex gap-6 relative mb-6">
+                            <p className="text-4xl">00.</p>
+                            <div className="w-4/12">
+                                <h2 className="text-4xl uppercase text-green-300">
+                                    Elevate Your Vision: Diginie It
+                                </h2>
+                                <p className=" mt-6 text-sm opacity-75 font-light">
+                                    At Diginie It, we specialize in transforming
+                                    your dreams into reality. With creative
+                                    solutions, strategic planning, and
+                                    cutting-edge technologies, our dynamic team
+                                    is dedicated to elevating your vision.
+                                    Welcome to unparalleled success with Diginie
+                                    It.
+                                </p>
+                            </div>
+                            <Image
+                                src={shape03}
+                                alt="shape"
+                                className="absolute w-10 -left-10 -top-6"
+                            ></Image>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-4 py-10">
+                        <div className="mt-3 opacity-60">
+                            <h3 className="text-5xl py-3 px-10 border border-white/30 rounded-full inline ">
+                                02+
+                            </h3>
+                            <p className="mt-8 ps-2">
+                                Years of working experience
+                            </p>
+                        </div>
+
+                        <div className="mt-3 opacity-60">
+                            <h3 className="text-5xl py-3 px-10 border border-white/30 rounded-full inline ">
+                                05+
+                            </h3>
+                            <p className="mt-8 ps-2">Countries we serve</p>
+                        </div>
+
+                        <div className="mt-3 opacity-60">
+                            <h3 className="text-5xl py-3 px-10 border border-white/30 rounded-full inline ">
+                                15+
+                            </h3>
+                            <p className="mt-8 ps-2">IT Professionals</p>
+                        </div>
+
+                        <div className="mt-3 opacity-60">
+                            <h3 className="text-5xl py-3 px-10 border border-white/30 rounded-full inline ">
+                                100+
+                            </h3>
+                            <p className="mt-8 ps-2">
+                                Projects completes all over the world
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default Goal;

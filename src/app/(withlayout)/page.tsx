@@ -1,5 +1,4 @@
 import Clients from "@/components/HomeComponent/Clients";
-import Counter from "@/components/HomeComponent/Counter";
 import Goal from "@/components/HomeComponent/Goal";
 import Header from "@/components/HomeComponent/Header";
 import HomeService from "@/components/HomeComponent/HomeService";
@@ -10,12 +9,11 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            {/* <Counter></Counter> */}
             <HomeService></HomeService>
             <Clients></Clients>
             {/* <Indusstry></Indusstry> */}
             <Goal></Goal>
-            <Partner></Partner>
+            {/* <Partner></Partner> */}
         </div>
     );
 };

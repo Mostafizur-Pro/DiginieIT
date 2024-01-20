@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Clients = () => {
     return (
-        <section className=" border-b">
+        <section className=" border-b border-white/40">
             <div className="container mx-auto lg:px-16 px-4 py-28">
                 <h2 className="text-center mb-4">
                     We are trusted by industry leaders
