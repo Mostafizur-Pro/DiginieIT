@@ -31,7 +31,7 @@ const Clients = () => {
                     ></Image>
 
                     <Image
-                        className="h-12 w-auto"
+                        className="h-12 w-auto opacity-60"
                         src={company04}
                         alt="Company 01"
                     ></Image>
