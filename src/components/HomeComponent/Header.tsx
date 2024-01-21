@@ -14,7 +14,7 @@ const Header = () => {
                     <Image
                         src={planningImage01}
                         alt="Planning Image"
-                        className="lg: h-96 w-full object-cover"
+                        className="xl:h-[30rem] lg:h-96 w-full object-cover"
                     ></Image>
                     <div className="absolute bottom-0 left-0">
                         <Image
