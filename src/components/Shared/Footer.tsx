@@ -1,35 +1,107 @@
+import Image from "next/image";
 import Link from "next/link";
+import logo from "@/assets/logo2.png";
+import Divider from "@/assets/divider.svg";
+import {
+    FaFacebook,
+    FaLinkedinIn,
+    FaTwitter,
+    FaEnvelope,
+    FaPhoneAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
-  return (
-    <footer className="footer p-10 bg-base-300 text-base-content">
-  <nav>
-    <header className="footer-title">Services</header> 
-    <a className="link link-hover">Website Development</a>
-    <a className="link link-hover">Mobile App Development</a>
-    <a className="link link-hover">Ecommerce-site Development</a>
-    <a className="link link-hover">UI/UX Design & Dev</a>
-    <a className="link link-hover">API Integration</a>
-    <a className="link link-hover">Digital Marketing</a>
-  </nav> 
-  <nav>
-    <header className="footer-title">Company</header> 
-    <Link href="/about" className="link link-hover">About Us</Link>
-    <Link href="/contact" className="link link-hover">Contact</Link>
-    <a className="link link-hover">Projects</a>
-    <a className="link link-hover">Careers</a>
-    <a className="link link-hover">Our Team</a>
-  </nav> 
-  <nav>
-    <header className="footer-title">Social</header> 
-    <div className="grid grid-flow-col gap-4">
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
-      <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
-    </div>
-  </nav>
-</footer>
-  );
+    return (
+        <footer className="xl:mt-16 pb-16">
+            <Image
+                src={Divider}
+                className="text-primary w-full"
+                alt="Divider"
+            ></Image>
+            <div className="container mx-auto lg:px-16 px-4 lg:py-28 py-16">
+                <div className="grid md:grid-cols-4 gap-5">
+                    <div className="">
+                        <Image
+                            src={logo}
+                            alt="diginite it"
+                            className="h-12 w-auto"
+                        ></Image>
+                        <p className=" text-xs text-white/70 pt-6 ps-1">
+                            © 2024 Diginite It. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div className="pt-3">
+                        <h4 className="text-xl pb-6">Our Service</h4>
+                        <div className="text-sm opacity-70 space-y-2">
+                            <p className="">
+                                <Link href={"/"}>Website Development</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/"}>Mobile App Development</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/"}>
+                                    Ecommerce-site Development
+                                </Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/"}>UI/UX Design & Dev</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/"}>API Integration</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/"}>Digital Marketing</Link>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="pt-3">
+                        <h4 className="text-xl pb-6">Important Links</h4>
+                        <div className="text-sm opacity-70 space-y-2">
+                            <p className="">
+                                <Link href={"/about"}>About Us</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/terms"}>Terms and condition</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/contact"}>Contact Us</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/projects"}>Projects</Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/career"}>
+                                    Careers Opportunity
+                                </Link>
+                            </p>
+                            <p className="">
+                                <Link href={"/team"}>Our Team</Link>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="pt-3">
+                        <h4 className="text-xl pb-6">Contact Info</h4>
+                        <div className="text-sm opacity-70 space-y-2">
+                            <p className="flex items-center gap-3">
+                                <FaEnvelope />{" "}
+                                <span>diginite.It@gmail.com</span>
+                            </p>
+                            <p className="flex items-center gap-3">
+                                <FaPhoneAlt /> <span>+880 1970 706676</span>
+                            </p>
+
+                            <p className=" flex items-center gap-3 text-xl pt-3">
+                                <FaFacebook />
+                                <FaLinkedinIn />
+                                <FaTwitter />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
