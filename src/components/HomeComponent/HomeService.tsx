@@ -50,12 +50,12 @@ const HomeService = async () => {
     return (
         <section className="bg-primary mt-32">
             <div className="container mx-auto lg:px-16 px-4 py-32">
-                <div className="grid grid-cols-7">
-                    <div className="col-span-3">
-                        <h2 className="text-6xl uppercase">
+                <div className="grid md:grid-cols-7">
+                    <div className="xl:col-span-3 col-span-4">
+                        <h2 className="xl:text-6xl lg:text-5xl md:text-4xl text-3xl uppercase">
                             We offer best service for our customer.
                         </h2>
-                        <div className="flex items-center gap-16 text-sm py-16">
+                        <div className="flex items-center lg:gap-16 gap-6 text-sm lg:py-16 py-10">
                             <div className="h-0.5 w-36 bg-white"></div>
                             <p className="">
                                 find effective digital reach or your business,
@@ -63,20 +63,20 @@ const HomeService = async () => {
                             </p>
                         </div>
                     </div>
-                    <div className=""></div>
-                    <div className="col-span-3  ">
+                    <div className="xl:block hidden"></div>
+                    <div className="col-span-3  md:block hidden">
                         <Image src={serviceImage} alt="service image"></Image>
                     </div>
                 </div>
-                <div className="mt-16">
-                    <div className="grid grid-cols-4 gap-10">
+                <div className="lg:mt-16 mt-10">
+                    <div className="grid md:grid-cols-4 grid-cols-2 gap-10">
                         {services.map((service, idx) => (
                             <div key={idx} className="">
-                                <h5 className="border-b-2 text-lg">
+                                <h5 className="border-b-2 lg:text-lg text-sm">
                                     0{idx + 1}.
                                 </h5>
                                 <div className="pt-6">
-                                    <h3 className="uppercase text-3xl">
+                                    <h3 className="uppercase xl:text-3xl lg:text-2xl md:text-lg">
                                         {service.serviceName}
                                     </h3>
                                 </div>
@@ -86,8 +86,10 @@ const HomeService = async () => {
                                             className="flex
                                         items-center gap-6"
                                         >
-                                            <p className="">Details </p>
-                                            <p className="bg-black w-10 h-10 flex items-center justify-center rounded-full">
+                                            <p className="xl:text-base text-sm">
+                                                Details{" "}
+                                            </p>
+                                            <p className="bg-black xl:w-10 w-8 xl:h-10 h-8 flex items-center justify-center rounded-full">
                                                 <MdArrowOutward className="" />
                                             </p>
                                         </span>

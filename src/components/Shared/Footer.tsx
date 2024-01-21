@@ -12,14 +12,14 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="mt-16 pb-16">
+        <footer className="xl:mt-16 pb-16">
             <Image
                 src={Divider}
                 className="text-primary w-full"
                 alt="Divider"
             ></Image>
-            <div className="container mx-auto lg:px-16 px-4 py-28">
-                <div className="grid grid-cols-4">
+            <div className="container mx-auto lg:px-16 px-4 lg:py-28 py-16">
+                <div className="grid md:grid-cols-4 gap-5">
                     <div className="">
                         <Image
                             src={logo}
