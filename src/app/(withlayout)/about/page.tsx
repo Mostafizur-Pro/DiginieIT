@@ -11,7 +11,7 @@ const About = () => {
                     className="h-16 w-auto"
                 ></Image>
             </div>
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto lg:text-base text-xs text-center">
                 <div className=" py-10">
                     <p className=" ">
                         Incepted in 2015, Diginite It. has been serving as a
@@ -26,7 +26,9 @@ const About = () => {
             </div>
 
             <div className="py-16">
-                <h3 className="mb-5 text-4xl font-semibold">Why Diginie IT</h3>
+                <h3 className="mb-10 text-4xl font-semibold text-center">
+                    Why Diginie it
+                </h3>
                 <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                     <li>
                         <hr />
@@ -35,7 +37,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -67,7 +69,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -99,7 +101,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -131,7 +133,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -162,7 +164,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -194,7 +196,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -226,7 +228,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -259,7 +261,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -291,7 +293,7 @@ const About = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="h-5 w-5"
+                                className="h-8 w-8"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -320,50 +322,14 @@ const About = () => {
                     </li>
                 </ul>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 py-12 gap-5  mx-20">
-                <div className="lg:mt-28 me-10">
+
+            <div className="text-center">
+                <div className="lg:mt-30">
                     <div className="about-item">
-                        <h3 className="mb-5 text-2xl font-semibold">
-                            Company <span className="text-primary">Growth</span>
+                        <h3 className="mb-5 text-4xl font-semibold">
+                            Our Mission
                         </h3>
-                        <p className="">
-                            Mediusware mounts its vast expertise, superior
-                            technical skills, and highest quality support
-                            services to provide scalable IT solutions to its
-                            clients. Our Milestone of satisfying 1000+ global
-                            clients shows our expertise and dedication to
-                            provide our clients with highest class digital
-                            services and solutions. scalable IT solutions to its
-                            clients
-                        </p>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="img">
-                        <img
-                            className="w-full object-cover"
-                            src="https://mediusware.com/assets/company-growth.ae278813.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 py-12 gap-5  mx-20">
-                <div className="">
-                    <div className="img">
-                        <img
-                            className="w-full object-cover"
-                            src="https://mediusware.com/assets/mission-vision.b767b120.png"
-                            alt=""
-                        />
-                    </div>
-                </div>
-                <div className="lg:mt-40">
-                    <div className="about-item">
-                        <h3 className="mb-5 text-2xl font-semibold">
-                            Our <span className="text-primary">Mission</span>
-                        </h3>
-                        <p className=" ">
+                        <p className="max-w-4xl mx-auto lg:text-base text-xs">
                             Leave a positive footprint by devoting our human
                             resources, technologies and expertise to deliver
                             top-of-the-line digital products, thereby
@@ -372,10 +338,10 @@ const About = () => {
                         </p>
                     </div>
                     <div className="about-item">
-                        <h3 className="my-5 text-2xl font-semibold">
-                            Our <span className="text-primary">Vision</span>
+                        <h3 className="my-5 text-4xl font-semibold">
+                            Our Vision
                         </h3>
-                        <p className="">
+                        <p className="max-w-4xl mx-auto lg:text-base text-xs">
                             Deliver one-of-a-kind digital solutions to
                             facilitate global businesses, powered by innovation
                             and guided by integrity.
