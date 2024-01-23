@@ -84,7 +84,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {closeMenu && (
-                        <div className="bg-gray-300 h-screen  absolute top-0 right-0 w-80">
+                        <div className="bg-[#0F1110] z-50 h-screen  absolute top-0 right-0 w-80">
                             <div className="flex justify-between p-10 items-end">
                                 <div className="">
                                     <Image
