@@ -84,8 +84,7 @@ const Footer = () => {
                         <h4 className="text-xl pb-6">Contact Info</h4>
                         <div className="text-sm opacity-70 space-y-2">
                             <p className="flex items-center gap-3">
-                                <FaEnvelope />{" "}
-                                <span>diginite.It@gmail.com</span>
+                                <FaEnvelope /> <span>info@diginieit.com</span>
                             </p>
                             <p className="flex items-center gap-3">
                                 <FaPhoneAlt /> <span>+880 1970 706676</span>
