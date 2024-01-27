@@ -41,11 +41,11 @@ const Team = () => {
                     and passion.
                 </p>
             </div> */}
-            <div className="mt-20">
+            <div className="lg:mt-20">
                 <div className="">
-                    <div className="grid grid-cols-6 gap-6 mb-16">
+                    <div className="grid lg:grid-cols-6 md:gap-6 mb-16">
                         <div className="col-span-2 ">
-                            <h2 className="text-4xl  font-light">
+                            <h2 className="2xl:text-4xl xl:text-3xl text-2xl  font-light">
                                 Navigating Success: Meet Our Leadership Trio
                             </h2>
                             <p className="text-sm py-6 mb-4 opacity-60">
@@ -58,7 +58,7 @@ const Team = () => {
                             </p>
                         </div>
                         <div className="col-span-4">
-                            <div className="grid grid-cols-3 gap-10">
+                            <div className="grid  md:grid-cols-3 gap-10">
                                 {teamMembers.slice(0, 3).map((member, idx) => (
                                     <div className="relative" key={idx}>
                                         <div className="relative">
@@ -127,9 +127,9 @@ const Team = () => {
                     </div>
                 </div>
                 <div className="pt-20">
-                    <div className="grid grid-cols-6 gap-6">
-                        <div className="col-span-2 sticky top-10">
-                            <h2 className="text-4xl  font-light">
+                    <div className="grid lg:grid-cols-6 md:gap-6">
+                        <div className="col-span-2">
+                            <h2 className="2xl:text-4xl xl:text-3xl text-2xl  font-light">
                                 Collaborative Brilliance: Our Dedicated Team
                             </h2>
                             <p className="text-sm py-6 mb-4 opacity-60">
@@ -143,7 +143,7 @@ const Team = () => {
                             </p>
                         </div>
                         <div className="col-span-4">
-                            <div className="grid grid-cols-3 gap-10">
+                            <div className="grid md:grid-cols-3 gap-10">
                                 {teamMembers
                                     .slice(3, teamMembers.length)
                                     .map((member, idx) => (
