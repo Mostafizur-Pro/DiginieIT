@@ -1,0 +1,3 @@
+const GA_TRACKING_ID = 'G-4EBCZDE8QJ';
+
+export { GA_TRACKING_ID };
