@@ -5,8 +5,20 @@ import Link from "next/link";
 import shape from "@/assets/shape2.png";
 import Image from "next/image";
 
+
+interface TeamMember {
+    name: string;
+    designation: string;
+    company: string;
+    image: string;
+    facebook: string;
+    linkedin: string;
+    github: string;
+    portfolio: string;
+  }
+
 const Team = () => {
-    const [teamMembers, setTeamMembers] = useState([]);
+    const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
     const [loading, setLoading] = useState(false);
 
     async function getData() {
@@ -63,30 +75,30 @@ const Team = () => {
                                     <div className="relative" key={idx}>
                                         <div className="relative">
                                             <img
-                                                src={member.image}
+                                                src={member?.image}
                                                 className="w-full "
-                                                alt={member.name}
+                                                alt={member?.name}
                                             ></img>
                                             <Image
                                                 src={shape}
                                                 className="w-16 rotate-90 absolute bottom-0 -left-1"
-                                                alt={member.name}
+                                                alt={member?.name}
                                             ></Image>
                                         </div>
 
                                         <div className="ps-8 py-2">
                                             <h1 className="text-xl font-light">
-                                                {member.name}
+                                                {member?.name}
                                             </h1>
                                             <p className="text-xs">
-                                                {member.designation}
+                                                {member?.designation}
                                             </p>
                                         </div>
                                         <div className="absolute top-5 -right-4 flex justify-between items-end flex-col">
                                             <p className="text-sm opacity-75 ">
                                                 <Link
                                                     className="flex items-center gap-2 text-black"
-                                                    href={member.facebook}
+                                                    href={member?.facebook}
                                                 >
                                                     facebook{" "}
                                                     <GoArrowUpRight className="text-white" />

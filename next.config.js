@@ -5,6 +5,7 @@ module.exports = {
     images: {
         unoptimized: true,
     },
+    
     // images: {
     //   remotePatterns: [
     //     {
