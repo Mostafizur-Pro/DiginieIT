@@ -46,10 +46,10 @@ const Careers = () => {
             <p className="py-2 px-4 rounded-full border inline ">
                 join our team
             </p>
-            <h2 className="text-7xl mt-6 uppercase font-semibold">
+            <h2 className="md:text-7xl text-6xl mt-6 uppercase font-semibold">
                 Be the part of our mission
             </h2>
-            <p className="w-10/12 pt-6">
+            <p className="md:w-10/12 md:text-base text-xs pt-6">
                 Discover exciting career opportunities at Diginite it. Join our
                 dynamic team dedicated to innovation and collaboration. Grow
                 personally and professionally in a supportive environment. Shape
