@@ -5,7 +5,6 @@ import Link from "next/link";
 import shape from "@/assets/shape2.png";
 import Image from "next/image";
 
-
 interface TeamMember {
     name: string;
     designation: string;
@@ -15,7 +14,7 @@ interface TeamMember {
     linkedin: string;
     github: string;
     portfolio: string;
-  }
+}
 
 const Team = () => {
     const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
