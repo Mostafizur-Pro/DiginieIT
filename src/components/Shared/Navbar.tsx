@@ -14,8 +14,8 @@ const Navbar = () => {
             path: "/",
         },
         {
-            route: "Project",
-            path: "/project",
+            route: "Projects",
+            path: "/projects",
         },
         {
             route: "Careers",
