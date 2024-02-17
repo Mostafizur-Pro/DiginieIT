@@ -24,15 +24,17 @@ const Projects = () => {
             <div className="my-10">
                 {projects.map((project, idx) => (
                     <div
-                        className="flex border justify-between gap-16 items-center mt-10 ps-16"
+                        className="grid grid-cols-8 border justify-between gap-16 items-center mt-14 ps-16 me-4"
                         key={idx}
                     >
-                        <div className=" border-white/30 flex gap-10 items-center">
-                            <h2 className="text-8xl font-semibold opacity-40">
+                        <div className=" col-span-1 border-white/30 flex gap-10 items-center">
+                            <h2 className="text-8xl outline-title text-transparent font-semibold opacity-40">
                                 0{project.id}
                             </h2>
+                        </div>
+                        <div className="col-span-4 relative h-full flex items-center">
                             <div className="">
-                                <h2 className="text-2xl font-semibold">
+                                <h2 className="text-3xl font-">
                                     {project.name}
                                 </h2>
                                 <h2 className="text-sm opacity-60 pt-3">
@@ -49,15 +51,21 @@ const Projects = () => {
                                     ))}
                                 </div>
                             </div>
+                            <div className="absolute -bottom-5">
+                                <button className="px-6 py-2 border rounded-full bg-[#0F1110]">
+                                    Details
+                                </button>
+                            </div>
                         </div>
-                        <div className="relative">
-                            <img
+
+                        <div className=" col-span-3">
+                            <Image
+                                height={400}
+                                width={400}
                                 src={project.image}
-                                className=" w-96 h-96 object-cover"
+                                className=" w-full h-96 object-cover"
                                 alt={project.name}
-                            ></img>
-                            <div className="h-10 w-64 border-b bg-transparent -rotate-45 absolute top-0 -left-32 "></div>
-                            <div className="h-10 w-64 border-b bg-transparent -rotate-45 absolute bottom-0 -right-16 "></div>
+                            ></Image>
                         </div>
                     </div>
                 ))}
