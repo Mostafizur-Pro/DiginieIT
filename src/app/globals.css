@@ -13,3 +13,8 @@
     background-clip: text;
     color: transparent; /* Hide original text */
 }
+
+.outline-title {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-stroke: 1px rgb(255, 255, 255);
+}
