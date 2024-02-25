@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "E-commerce Website",
+        "details": "Developed a fully functional e-commerce website with user authentication, product catalog, shopping cart, and payment integration.",
+        "technology": ["React.js", "Node.js", "MongoDB"],
+        "image": "https://i.ibb.co/sFD4rrB/3.jpg",
+        "demoLink": "https://example.com/demo",
+        "githubLink": "https://github.com/username/project"
+    },
+    {
+        "id": 2,
+        "name": "Mobile Fitness App",
+        "details": "Created a mobile fitness application to track workouts, set goals, and monitor progress. Integrated with wearable devices for real-time data sync.",
+        "technology": ["React Native", "Firebase"],
+        "image": "https://i.ibb.co/mhG0427/2.jpg",
+        "demoLink": "https://example.com/demo",
+        "githubLink": "https://github.com/username/project"
+    },
+    {
+        "id": 3,
+        "name": "Data Visualization Dashboard",
+        "details": "Designed and developed a data visualization dashboard for analyzing business metrics and trends. Included interactive charts and graphs.",
+        "technology": ["Vue.js", "D3.js", "Python"],
+        "image": "https://i.ibb.co/5s74wF6/modern-gym.jpg",
+        "demoLink": "https://example.com/demo",
+        "githubLink": "https://github.com/username/project"
+    },
+    {
+        "id": 4,
+        "name": "Chatbot Platform",
+        "details": "Built a chatbot platform for automating customer support and handling frequently asked questions. Implemented natural language processing for better user interaction.",
+        "technology": ["Python", "TensorFlow", "Dialogflow"],
+        "image": "https://i.ibb.co/YjLZtK5/plan-pixel.png",
+        "demoLink": "https://example.com/demo",
+        "githubLink": "https://github.com/username/project"
+    }
+]

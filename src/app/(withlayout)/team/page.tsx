@@ -180,6 +180,7 @@ const Team = () => {
                                                     {member.designation}
                                                 </p>
                                             </div>
+                                            
                                             <div className="absolute top-5 -right-4 flex justify-between items-end flex-col">
                                                 <p className="text-sm opacity-75 ">
                                                     <Link
