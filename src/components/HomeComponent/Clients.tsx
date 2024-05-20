@@ -1,8 +1,8 @@
-import company01 from "@/assets/compnay/IITAB-01.png";
-import company02 from "@/assets/compnay/NEDUBD.png";
-import company03 from "@/assets/compnay/business.png";
-import company04 from "@/assets/compnay/company1.png";
-import company05 from "@/assets/compnay/swachhakasar.png";
+import company01 from "@/assets/company/IITAB-01.png";
+import company02 from "@/assets/company/NEDUBD.png";
+import company03 from "@/assets/company/business.png";
+import company04 from "@/assets/company/company1.png";
+import company05 from "@/assets/company/swachhakasar.png";
 import Image from "next/image";
 
 const Clients = () => {
